@@ -3,17 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <title>Exercice 5</title>
-</head>
-<body>
-  <div class="container">
-    <img src="assets/img/image1.jpg" id="image1" onMouseOver='changeimage(1)'/>
-    <img src="assets/img/image2.jpg" id="image2" onMouseOver='changeimage(2)'/>
-    <img src="assets/img/image3.jpg" id="image3" onMouseOver='changeimage(3)'/>
-    <img src="assets/img/image4.jpg" id="image4" onMouseOver='changeimage(4)'/>
-    <img src="assets/img/image5.jpg" id="image5" onMouseOver='changeimage(5)'/>
-    <!-- L'évènement onmouseover est lié à la position et au déplacement de la souris.
-    Il déclenche une action lorsque le curseur de la souris entre dans l'élément sur lequel est déclaré cet évènement.  -->
-  </div>
-  <script src="assets/js/script.js"></script>
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <img src="assets/img/image1.jpg" id="image1" onmouseover="changeImage(this,'assets/img/image1_2.jpg')"/>
+      <img src="assets/img/image2.jpg" id="image2" onmouseover="changeImage(this,'assets/img/image2_2.jpg')"/>
+      <img src="assets/img/image3.jpg" id="image3" onmouseover="switchImages(id)"/>
+      <img src="assets/img/image4.jpg" id="image4" onmouseover="switchImages(id)"/>
+      <img src="assets/img/image5.jpg" id="image5" onmouseover="switchImages(id)"/>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
